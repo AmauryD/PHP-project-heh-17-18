@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} ^
+RewriteRule ^([a-zA-Z]*)?/?([a-zA-Z]*)?/?([a-zA-Z0-9]*)?/?$ index.php?controller=$1&action=$2&id=$3 [NC,L]
+RewriteCond %{REQUEST_URI} ^
+RewriteRule ^([a-zA-Z]*)?/?([a-zA-Z]*)?/?([a-zA-Z]*)?/?([a-zA-Z0-9]*)?/?$ index.php?prefix=$1&controller=$2&action=$3&id=$4 [NC,L]
